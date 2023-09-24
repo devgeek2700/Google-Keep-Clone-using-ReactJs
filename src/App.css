@@ -1,38 +1,245 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.fa-bars {
+  font-size: 20px;
+  margin-right: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.search_box {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-around;
+  width: 900px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: #efe7e7;
 }
 
-.App-link {
-  color: #61dafb;
+.search_box input {
+  outline: none;
+  border: 0;
+  background-color: #efe7e7;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.fa-magnifying-glass {
+  margin-right: 10px;
+  font-size: 25px;
+  color: #413f3f;
+  background-color: #efe7e7;
+}
+
+.fa-solid {
+  margin-left: 15px;
+  margin-right: 10px;
+  color: #605e5e;
+  font-size: 20px;
+}
+
+.custimg {
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+/* Main section */
+
+.Main_box {
+  width: 100%;
+  height: 87vh;
+  background-color: red;
+  display: flex;
+}
+
+.Main_box .col1 {
+  width: 20%;
+  height: 91vh;
+  /* background-color: aqua; */
+}
+
+.Main_box .col2 {
+  width: 80%;
+  height: 91vh;
+  /* background-color: aqua; */
+}
+
+.Main_box .col1 ul {
+  width: 100%;
+}
+
+.Main_box .col1 ul li {
+  width: 111%;
+  height: 10vh;
+  /* background-color: rgb(195, 245, 195); */
+  border-top-right-radius: 35px;
+  border-bottom-right-radius: 35px;
+  /* border: 2px solid black; */
+  list-style: none;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: -31px;
+}
+
+.Main_box .col1 ul li:first-child {
+  background-color: rgb(251, 231, 12);
+  border: 2px solid black;
+  border-top-right-radius: 35px;
+  border-bottom-right-radius: 35px;
+}
+
+.Main_box .col1 ul li:hover {
+  background-color: #efe7e7;
+
+}
+
+.Main_box .col1 ul li a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  width: 200px;
+  text-align: center;
+  background-color: transparent;
+  margin-left: -20px;
+  color: #605e5e;
+}
+
+.Main_box .col1 ul li .fa-solid {
+  margin-right: 10px;
+  background-color: transparent;
+  color: #605e5e;
+  font-size: 25px;
+}
+
+/* footer */
+
+.foot_box {
+  width: 100%;
+  height: 3vh;
+}
+
+.foot_txt {
+  text-align: center;
+  margin-top: 3px;
+  color: #605e5e;
+}
+
+
+/* Create the text box */
+.text_row {
+  display: flex;
+  align-items: center;
+  width: 600px;
+  height: 8vh;
+  /* background-color: red; */
+  margin-left: 25%;
+  margin-top: 2%;
+  box-shadow: -1px -6px 4px 4px rgba(0, 0, 0, 0.18);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  /* background-color: green; */
+}
+
+.text_row input {
+  width: 630px;
+  outline: none;
+  border: 0;
+  height: 6vh;
+  margin-left: 10px;
+  padding-left: 10px;
+}
+
+.text_row input::placeholder {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.Big_txt_box textarea {
+  margin-left: 25%;
+  width: 600px;
+  height: 20vh;
+  margin-top: -2px;
+  outline: none;
+  padding-left: 20px;
+  padding-top: 5px;
+  border: 0;
+  /* background-color: red; */
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.Btn_txt_box {
+  display: flex;
+  margin-left: 55%;
+  margin-top: -5%;
+}
+
+.Btn_txt_box .createbtn {
+  margin-left: 10px;
+  width: 100px;
+}
+
+.Btn_txt_box .cancelbtn {
+  width: 100px;
+}
+
+
+
+/* Created Note */
+
+
+.Note_cont {
+  display: flex;
+  flex-direction: row;
+  /* background-color: yellow; */
+  margin-top: 10px;
+}
+
+.Note_row {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 3%;
+}
+
+.Note_box {
+  width: 230px;
+  height: 30vh;
+  /* background-color: green; */
+  margin-left: 1%;
+  margin-top: 2%;
+  z-index: 999;
+  padding: 5px;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.Note_box h2 {
+  text-align: center;
+  font-size: 30px;
+  height: 6vh;
+  margin-top: 2px;
+  padding-top: 5px;
+  padding-top: 2px;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.Note_box p {
+  text-align: center;
+  height: 16vh;
+  font-size: 20px;
+  padding-top: 4px;
+  margin-top: -5px;
+}
+
+.trashBtn {
+  margin-left: 80%;
+  font-size: 20px;
+}
+
+.trashBtn:hover {
+  color: red;
 }
