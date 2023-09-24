@@ -48,9 +48,9 @@ This will start the development server, and you can access the application in yo
 - Archive notes to keep your main notes list tidy.
 - Easily search for notes.
 
-## Deploy Website
+## Hosted Website on Github Pages
 
-![Google Keep Clone](https://devgeek2700.github.io/keep-deploy/)
+https://devgeek2700.github.io/keep-deploy/
 
 ## Demo
 
